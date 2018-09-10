@@ -18,11 +18,7 @@ async def on_message(message):
     if message.content == "hoi":
         await client.send_message(message.channel,":wave: HALLO!! :wave:") 
 
-        
-@client.event
-async def on_message(message):
-    if message.content == ":pk:":
-        await client.send_message(message.channel,":pk: = SUPER COOL")       
+               
                    
 
        
