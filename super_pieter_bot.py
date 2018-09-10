@@ -5,18 +5,18 @@ import asyncio
 import time
 
 
-Client = discord.Client() #Initialise Client 
-client = commands.Bot(command_prefix = "?") #Initialise client bot
+Client = discord.Client()  
+client = commands.Bot(command_prefix = "!") 
 
 
 @client.event 
 async def on_ready():
-    print("Bot is online and connected to Discord") #This will be called when the bot connects to the server
+    print("Bot is online and connected to Discord") 
 
 @client.event
 async def on_message(message):
     if message.content == "cookie":
-        await client.send_message(message.channel, ":cookie:") #responds with Cookie emoji when someone says "cookie"
+        await client.send_message(message.channel, ":cookie:") 
 
 client.run("NDg4Mjc1OTQ3NjkxNDQyMTg3.DnfxXQ.Ear2_QUHygAA02wTXzIMEVMcK4s")
 
