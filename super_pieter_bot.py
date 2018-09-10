@@ -22,9 +22,9 @@ async def on_message(message):
         
         
 @client.event
-async def on_message(message):
-    if message.content == ":pk:":
-        await client.send_message(message.channel,":pk: = SUPER COOL!! ")               
+async def on_message(test):
+    if test.content == ":pk:":
+        await client.send_message(test.channel,":pk: = SUPER COOL!! ")               
         
         
         
