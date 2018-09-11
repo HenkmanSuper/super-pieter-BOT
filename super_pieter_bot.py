@@ -16,7 +16,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content == "hoi":
-        await client.send_message(message.channel,":wave: HALLO!! :wave:") 
+        await client.send_message(message.channel,":wave: HALLOoooooo!! :wave:") 
 
                
                    
